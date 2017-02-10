@@ -1038,7 +1038,7 @@ appbuilder.add_view(
 
 class QueryView(SupersetModelView):
     datamodel = SQLAInterface(models.Query)
-    list_columns = ['user', 'database', 'status', 'start_time', 'end_time']
+    list_columns = ['user', 'database', 'tab_name', 'status', 'rows', 'start_time', 'end_time', 'sql']
 
 appbuilder.add_view(
     QueryView,
